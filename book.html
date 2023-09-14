@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <link rel="stylesheet" href="book.css">
+        <title>Book appointement</title>
+
+    </head>
+    <body>
+        <nav>
+            <a href="health.html"><img src="images/logo2.png"></a>
+        <div class="nav-link" id="navLinks">
+            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+            <ul>
+                <li class="list"><a href="health.html">Home</a></li>
+                <li class="list"><a href="services.html">Services</a></li>
+                <li class="list"><a href="aboutUs.html">About us</a></li>
+                <li class="list"><a href="contact.html">Contact</a></li>
+    
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+    </nav>
+        <div id="ubox">
+            <h1>Book Appointement</h1>
+            <form id="lbox" action="bookapp.php" method="post">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required><br><br>
+        
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required><br><br>
+    
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="type" value="1">
+                <label for="html">Male</label>
+                <input type="radio" id="female" name="type" value="2">
+                <label for="css">Female</label><br> <br>        
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required><br><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <button id="btn">Submit</button>
+    
+            </form>
+        </div>
+       <footer>
+        <p>&copy; 2023 Medical Care Website</p>
+       </footer>
+       <script src="menu.js"></script>
+    </body>
+</html>

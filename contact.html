@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <title>Contact us</title>
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+            <a href="health.html"><img src="images/logo2.png"></a>
+        <div class="nav-link" id="navLinks">
+            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+            <ul>
+                <li class="list"><a href="health.html">Home</a></li>
+                <li class="list"><a href="services.html">Services</a></li>
+                <li class="list"><a href="aboutUs.html">About us</a></li>
+                <li class="list"><a href="contact.html">Contact</a></li>
+    
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+    </nav>
+        <div class="contact">
+            <div class="content">
+                <h1>Contact us</h1>
+                <p>You can contact us using the details given below!!!!</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="txt">
+                            <h2>Address</h2>
+                            <p>xxxxx</p>  
+                        </div>                
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="txt">
+                            <h2>Phone Number</h2>
+                            <p>+91 xxxxxxxxxx</p>
+                        </div>
+                        
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="txt">
+                            <h2>Email Id</h2>
+                            <p>xxxxxxxxxxx</p>
+                        </div>
+        
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="contact-box">
+                        <h2>Send Message</h2>
+                        <form name="contactForm" action="contactUs.php" method="post">
+                          
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="enter your name">
+                          
+                            <label for="phone">Phone No.:</label>
+                            <input type="text" id="phone" name="phone" placeholder="enter your phone number">
+                          
+                            <label for="mail">E-Mail</E-M>:</label>
+                            <input type="email" id="mail" name="mail" placeholder="enter your e-mail">
+                          
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" cols="38" rows="10"></textarea>
+                          
+                            <button id="btn">Submit</button>
+                        
+                        </form>
+                </div>
+                </div>
+            </div>
+           
+        </div>
+        <footer>
+            <p>&copy; 2023 Medical Care Website</p>
+        </footer>
+        <script src="menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Nav Bar */
+nav{
+    display: flex;
+    padding: 2% 8%;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(107, 5, 107);
+    height: 50px;
+}
+nav img{
+        width: 100px;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: rgb(234, 213, 213);
+    text-decoration: none;
+    font-size: 25px;
+}
+.nav-link ul li a:hover{
+    color: rgb(44, 144, 27);
+    font-size: 26px;
+}
+.nav-link ul li::after{
+    content: "";
+     width: 0;
+     height: 2px;
+     background:rgb(24, 122, 34) ;
+     display: block;
+     margin: auto;
+
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width:800px) {
+    
+    .nav-link ul li a{
+     display: block;
+     color: #000;
+     font-size: 12px;
+    }
+    .nav-link  {
+        position: absolute;
+        background: #fff;
+        height: 100vh;
+        width: 100px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        
+       }
+       .nav-link ul li a:hover{
+        color: rgb(44, 144, 27);
+        font-size: 18px;
+    }
+    
+    nav img{
+        width: 60px;
+}
+nav .fa{
+    display: block;
+    color: red;
+    margin:10px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.nav-link ul{
+    padding: 10px;
+}
+}
+/* booking */
+#ubox{
+    border: 2px solid black;
+    margin: 5% 15%;
+    height: 100%;
+}
+#ubox h1{
+    background-color: rgb(107, 5, 107);
+    height: 80px;
+    color: azure;
+    text-align: center;
+    padding-top:40px;
+}
+#lbox{
+    padding:30px 30px ;
+    border: 2px solid black;
+    font-size: 20px;
+}
+#btn{
+    font-size: 25px;
+    color: aliceblue;
+    background-color: rgb(107, 5, 107) ;
+    border-radius: 7px;
+    padding: 10px 10px;
+}
+
+@media(max-width:800px) {
+    #ubox{
+        border: 2px solid black;
+        margin: 25% 15%;
+        height: 100%;
+    }
+    #ubox h1{
+        font-size: 25px;
+    }
+    #lbox{
+        padding:30px 30px ;
+        border: 2px solid black;
+        font-size: 15px;
+    }
+    #btn{
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 10px 10px;
+    }
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
